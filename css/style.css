@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,200italic);
+
+body {
+    background: linear-gradient(#141e30, #243b55);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    position: relative;
+  }
+ 
+  .btn {
+  background:transparent;
+  text-align:center;
+  letter-spacing:1px;
+  font-size:1.4em;
+  line-height:0em;
+  font-weight:300;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  width:200px;
+  height:20px;
+  padding:20px 0;
+  color:whitesmoke ;
+  border:2px solid whitesmoke;
+  overflow:hidden;
+  display:inline-block;
+  transition:all 0.5s;
+  
+  border-radius: 4px;
+}
+
+.btn:hover, .btn:active {
+  text-decoration: none;
+  color:#fff;
+  border-color:#363858;
+  background:#363858;
+  box-shadow:0 0 0 #363858;
+}
+
