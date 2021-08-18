@@ -1,12 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,200italic);
 
-body {
-    background: linear-gradient(#141e30, #243b55);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
-    position: relative;
-  }
+
  
   .btn {
   background:transparent;
@@ -36,8 +30,8 @@ body {
 .btn:hover, .btn:active {
   text-decoration: none;
   color:#fff;
-  border-color:#363858;
-  background:#363858;
-  box-shadow:0 0 0 #363858;
+  border-color:#141e30;
+  background: #141e30;
+  box-shadow:0 0 0 #141e30;
 }
 
