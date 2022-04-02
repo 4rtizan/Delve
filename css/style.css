@@ -1,37 +1,100 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,200italic);
 
+/* breweries styles */
+.breweries {
+  padding: 2rem;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(192px, 1fr));
+  grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+  border-radius: .5rem;
+}
+
+.breweries > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.breweries > ul > li > figure > img {
+  width: 90%;
+}
+
+.breweries > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.breweries > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+figure {
+  
+  width: 60%;
+  display: flex;
+  margin: auto;
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+  color: transparent;
+}
+
+.btn2 {
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 0px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn2:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px #7F0505;
+}
+
+.btn2color {
+  background-color: rgba(182,8,8,1); 
+  box-shadow: 0px 7px 0px 0px #7F0505;
+}
+
+.btn2color:hover {
+  background-color: #BD2020;
+  text-decoration: none;
+  color: whitesmoke;
+}
 
  
-  .btn {
-  background:transparent;
-  text-align:center;
-  letter-spacing:1px;
-  font-size:1.4em;
-  line-height:0em;
-  font-weight:300;
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
-  width:200px;
-  height:20px;
-  padding:20px 0;
-  color:whitesmoke ;
-  border:2px solid whitesmoke;
-  overflow:hidden;
-  display:inline-block;
-  transition:all 0.5s;
   
-  border-radius: 4px;
-}
-
-.btn:hover, .btn:active {
-  text-decoration: none;
-  color:#fff;
-  border-color:#141e30;
-  background: #141e30;
-  box-shadow:0 0 0 #141e30;
-}
-
