@@ -11,25 +11,14 @@
   <title>Delve</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body     
   class="page-section" 
   style="background:  #243b55">
-      <div 
-      class="text-center">
-        <img style="
-        border-radius: 12px;
-        margin-bottom: 10px;
-        width: 80%;" 
-        src="assets/pic498963.jpg" 
-        alt="">
-        <br>
-        <br>
-      </div>
-      <div onclick='this.document.getElementById("demo").innerHTML = "Hello World!";'  class="container" style="text-align: center">
+      
+      <div onclick="btn ()" class="container" style="text-align: center">
         <a onclick="this.innerHTML='Escoje un Heroe!'" class="btn2 btn2color ">Jugar</a>
       </div>
 
@@ -41,14 +30,15 @@
         </div>
         <div 
           class="text-center breweries text-justify" 
-          style="font-size: 23px;" id="breweries">
+          style="font-size: 23px; display: none;" id="breweries">
           <ul style="padding-left: 0px">
             <li class="text-responsive">
               <figure>
                 <!-- Photo -->
               </figure>
               <br>
-              <img style="
+              <img onclick="start('cleric')" 
+                style="
                 border-radius: 12px;
                 margin-bottom: 10px;
                 width: 100%;" 
@@ -61,7 +51,8 @@
                 <!-- Photo -->
               </figure>
               <br>
-              <img style="
+              <img onclick="start('mage')" 
+                style="
                 border-radius: 16px;
                 margin-bottom: 10px;
                 width: 100%;" 
@@ -74,7 +65,8 @@
                 <!-- Photo -->
               </figure>
               <br>
-              <img style="
+              <img onclick="start('warrior')" 
+                style="
                 border-radius: 16px;
                 margin-bottom: 10px;
                 width: 100%;" 
@@ -87,7 +79,8 @@
                 <!-- Photo -->
               </figure>
               <br>
-              <img style="
+              <img onclick="start('theft')" 
+                style="
                 border-radius: 12px;
                 margin-bottom: 10px;
                 width: 100%;" 
